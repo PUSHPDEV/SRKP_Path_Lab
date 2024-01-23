@@ -13,6 +13,10 @@
         </li>
         <li class="nav-item">
           <a class="nav-link active" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"
+            aria-current="page" routerLink="/package">Packages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"
             aria-current="page" routerLink="/about">About Us</a>
         </li>
         <li class="nav-item">
@@ -29,8 +33,8 @@
             Gallery
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#" routerLink="/contact">Images</a></li>
-            <li><a class="dropdown-item" href="#" routerLink="/contact">Videos</a></li>
+            <li><a class="dropdown-item" routerLink="/image">Images</a></li>
+            <li><a class="dropdown-item" routerLink="/video">Videos</a></li>
             <li>
               <hr class="dropdown-divider">
             </li>
