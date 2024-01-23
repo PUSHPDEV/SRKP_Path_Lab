@@ -1,0 +1,16 @@
+u {
+    text-decoration-line: underline;
+    text-decoration-color: rgb(0, 255, 255);
+    text-decoration-style: solid;
+}
+.img:hover{
+    box-shadow: inset 1px;
+}
+.card-body:hover {
+    background-color: #b0bec5;
+}
+
+.card:hover {
+    box-shadow: 1px 3px 2px #0fe,1px 3px 2px #0fe,1px 3px 2px #0fe,1px 3px 2px #0fe;
+    /* box-shadow: 1px 3px 8px #ffffff,1px 3px 8px #ffffff,1px 3px 8px #ffffff,1px 3px 8px #ffffff; */
+}

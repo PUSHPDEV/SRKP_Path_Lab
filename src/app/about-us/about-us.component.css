@@ -29,3 +29,7 @@ u {
     text-decoration-style: solid;
     /* transition: all .5s ease-in; */
 }
+
+.doctorName,.md-desc{
+    font-family: poppins;
+}
