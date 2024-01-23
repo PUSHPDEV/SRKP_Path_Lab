@@ -7,6 +7,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ImagesComponent } from './images/images.component';
 import { VideosComponent } from './videos/videos.component';
 import { PackagesComponent } from './packages/packages.component';
+import { LoginComponent } from './login/login.component';
 
 export const routes: Routes = [
     { 'path': 'home', 'title': 'Home', component: HomeComponent },
@@ -17,6 +18,7 @@ export const routes: Routes = [
     { 'path': 'service', 'title': 'Our Services', component: ServicesComponent },
     { 'path': 'image', 'title': 'Images', component: ImagesComponent },
     { 'path': 'video', 'title': 'Videos', component: VideosComponent },
+    { 'path': 'login', 'title': 'Login', component: LoginComponent },
     { 'path': '**', 'title': 'Page Not Found', component: PageNotFoundComponent }
 
 ];
