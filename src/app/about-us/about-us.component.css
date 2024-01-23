@@ -1,0 +1,31 @@
+.card img {
+
+    border: none;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+
+.card-img-overlay h5 {
+    margin-left: 180px;
+    font-size: 60px;
+}
+
+h5::selection,
+p::selection {
+    color: red;
+}
+
+.row .col {
+    padding: 20px;
+    border: 2px solid hotpink;
+    border-radius: 10px;
+    background-color: #0fe;
+}
+
+u {
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-style: solid;
+    /* transition: all .5s ease-in; */
+}

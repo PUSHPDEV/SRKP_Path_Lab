@@ -1,0 +1,32 @@
+
+.address{
+    color: #ffffff;
+    padding: 25px;
+}
+span{
+    font-weight: bold;
+    display: block;
+    color: #0fe;
+}
+ i{
+    /* font-size: 30px; */
+    border-radius: 50%;
+    background-color: #0fe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    color: #000000;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    /* border: 2px solid red; */
+}
+a {
+    color: #f7f6f6;
+    text-decoration: none;
+}
+/* input{
+    background-color: gray;
+} */
