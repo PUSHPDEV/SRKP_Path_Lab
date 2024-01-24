@@ -5,13 +5,14 @@ import { FooterComponent } from "./footer/footer.component";
 import { CommonModule } from '@angular/common';
 import { CarouselComponent } from "./carousel/carousel.component";
 import { AboutUsComponent } from "./about-us/about-us.component";
+import { ImagesComponent } from "./images/images.component";
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [CommonModule, HeaderComponent, RouterOutlet, FooterComponent, CarouselComponent, AboutUsComponent]
+    imports: [CommonModule, HeaderComponent, RouterOutlet, FooterComponent, CarouselComponent, AboutUsComponent, ImagesComponent]
 })
 export class AppComponent {
   title = 'SRKP_Path_Lab';

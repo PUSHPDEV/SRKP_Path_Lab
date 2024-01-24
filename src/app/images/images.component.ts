@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component, OnInit, inject } from '@angular/core';
+import { imagesAPI } from '../Services/Image_Service';
 
 @Component({
   selector: 'app-images',
@@ -10,16 +11,23 @@ import { Component, OnInit, inject } from '@angular/core';
   styleUrl: './images.component.css'
 })
 export class ImagesComponent implements OnInit {
+   constructor(private http:HttpClient){
+
+ }
   ngOnInit(): void {
-    this.fetchImages();
+  //  this.fetchData();
   }
 
   httpClient = inject(HttpClient);
-  images: any[] = [];
+  data: any[] = [];
 
-  fetchImages() {
-    this.httpClient.get('https://jsonplaceholder.typicode.com/posts/1').subscribe()
-  }
+  // fetchData() {
+  //   this.httpClient.get('https://jsonplaceholder.typicode.com/posts').subscribe((data:any)=>{
+  //     console.log(data);
+  //     this.data=data;
+      
+  //   });
+  // }
 
 
 }

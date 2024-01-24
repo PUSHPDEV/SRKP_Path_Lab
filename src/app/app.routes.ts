@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-import { ServicesComponent } from './services/services.component';
+import { ServicesComponent } from './Our-Services/services.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ImagesComponent } from './images/images.component';
 import { VideosComponent } from './videos/videos.component';
