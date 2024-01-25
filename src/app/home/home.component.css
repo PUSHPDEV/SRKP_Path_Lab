@@ -1,0 +1,10 @@
+.carousel-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card{
+    padding: 30px;
+    margin: 30px;
+}

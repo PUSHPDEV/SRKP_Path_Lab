@@ -1,0 +1,19 @@
+.container .card {
+  
+    border: none;
+    border-radius: 1px;
+    overflow: hidden;
+    box-shadow: 0 0px 8px 0px #00000030;
+    background: #fff;
+
+    transition: 0.2s all ease-in-out;
+}
+
+.container .card:hover {
+    box-shadow: 0 0px 8px 0px #00000030, 0 0px 8px 0px #00000030, 0 0px 8px 0px #00000030, 0 0px 8px 0px #00000030, 0 0px 8px 0px #00000030, 0 0px 8px 0px #00000030;
+
+}
+
+/* img {
+    border-radius: 1px;
+} */
