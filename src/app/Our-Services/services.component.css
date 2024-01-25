@@ -11,6 +11,7 @@ u {
 }
 
 .card:hover {
-    box-shadow: 1px 3px 2px #0fe,1px 3px 2px #0fe,1px 3px 2px #0fe,1px 3px 2px #0fe;
+    box-shadow: 0 0px 8px 0px #00000030, 0 0px 8px 0px #00000030, 0 0px 8px 0px #00000030, 0 0px 8px 0px #00000030, 0 0px 8px 0px #00000030, 0 0px 8px 0px #00000030;
+
     /* box-shadow: 1px 3px 8px #ffffff,1px 3px 8px #ffffff,1px 3px 8px #ffffff,1px 3px 8px #ffffff; */
 }
