@@ -2,9 +2,20 @@
     margin-left: 170px;
 }
 .nav-item{
-    padding-left: 30px;
+
+    padding-left: 50px;
 
 }
+.navbar{
+    font-weight: 500;
+    font-size: 17px;
+    font-family: poppins;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 15px -3px, rgba(0, 0, 0, 0.5) 0px 4px 6px -2px;
+}
+/* .container-fluid{
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 15px -3px, rgba(0, 0, 0, 0.5) 0px 4px 6px -2px;
+
+} */
 /* .active{
     border-bottom: 2px solid #7c3aed;
     transform: scale(1.1);

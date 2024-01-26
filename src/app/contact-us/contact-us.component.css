@@ -1,17 +1,19 @@
 
 .address{
-    color: #ffffff;
-    padding: 25px;
+    color: #000000;
+    padding: 15px;
 }
 span{
     font-weight: bold;
     display: block;
-    color: #0fe;
+    color: rgb(255, 0, 230);
 }
+
  i{
     /* font-size: 30px; */
     border-radius: 50%;
-    background-color: #0fe;
+    border: 1px solid #000000;
+    /* background-color: #0fe; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,8 +25,15 @@ span{
     margin-bottom: 20px;
     /* border: 2px solid red; */
 }
+i:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 8px #0fe;
+    border: 1px solid #0fe;
+    background: #0fe;
+    transition: all 0.5s ease;
+}
 a {
-    color: #f7f6f6;
+    color: #000000;
     text-decoration: none;
 }
 /* input{
