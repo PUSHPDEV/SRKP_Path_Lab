@@ -8,6 +8,7 @@ import { ImagesComponent } from './images/images.component';
 import { VideosComponent } from './videos/videos.component';
 import { PackagesComponent } from './packages/packages.component';
 import { LoginComponent } from './login/login.component';
+import { CustomersSayComponent } from './customers-say/customers-say.component';
 
 export const routes: Routes = [
     { 'path': 'home', 'title': 'Home', component: HomeComponent },
@@ -19,6 +20,7 @@ export const routes: Routes = [
     { 'path': 'image', 'title': 'Images', component: ImagesComponent },
     { 'path': 'video', 'title': 'Videos', component: VideosComponent },
     { 'path': 'login', 'title': 'Login', component: LoginComponent },
+    { 'path': 'customers-say', 'title': 'Customers Say', component: CustomersSayComponent },
     { 'path': '**', 'title': 'Page Not Found', component: PageNotFoundComponent }
 
 ];
