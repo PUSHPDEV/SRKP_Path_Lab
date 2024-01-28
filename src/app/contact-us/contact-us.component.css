@@ -8,7 +8,10 @@ span{
     display: block;
     color: rgb(255, 0, 230);
 }
+.form-control:hover{
+    border: 2px solid rgb(255, 0, 230);
 
+}
  i{
     /* font-size: 30px; */
     border-radius: 50%;
