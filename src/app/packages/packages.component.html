@@ -15,71 +15,48 @@
         </blockquote>
         <figcaption class="blockquote-footer mx-5">
             Dr. Surendra Kumar <cite title="Source Title">(Managing Director)</cite>
-            <!-- Someone famous in <cite title="Source Title">Source Title</cite> -->
         </figcaption>
     </figure>
 </div>
 
 
-
-
-
-
-
-<div class="container mt-5">
-    <div class="card mb-5" style="max-width: 100%;">
+<div class="container mt-5" *ngFor="let data of package; let i = index">
+    <div class="card mb-5" style="max-width: 100%; " *ngIf="i%2==0">
         <div class="row g-">
             <div class="col-md-4">
-                <img src="assets/Packages/cbc-test.jpeg" class="img-fluid " alt="...">
+                <img [src]="data.imageUrl" class="img-fluid " alt="...">
             </div>
             <div class="col-md-8 ">
                 <div class="card-body p-5">
-                    <h5 class="card-title">COMPLETE BLOOD COUNT; CBC</h5>
+                    <h5 class="card-title">{{data.name}}</h5>
                     <p class="card-text">
-                        Complete blood count (CBC) is a blood test used to evaluate your overall health
-                        & wellness and detect a wide range of disorders like anemia, infection and leukemia. This test
-                        measures several components and features of your blood like Red blood cells which carry oxygen;
-                        White blood cells which fight infection; Hemoglobin the oxygen carrying protein in red blood
-                        cells; Hematocrit proportion of red blood cells to the fluid component or plasma in your blood;
-                        Platelets which help with blood clotting. Abnormal increases or decreases in cell counts as
-                        revealed in a Complete blood count may indicate that you have an underlying medical condition
-                        that calls for further evaluation. This test also helps to monitor a known medical condition.
+                        {{data.description}}
                     </p>
-                    <h5 class="card-text"><small class="text-muted">₹ 350 </small></h5>
+                    <h5 class="card-text"><small class="text-muted">{{data.price}} </small></h5>
 
                 </div>
             </div>
         </div>
     </div>
-    <div class="card mb-5" style="max-width: 100%;">
+    <div class="card mb-5" style="max-width: 100%;" *ngIf="i%2!=0">
         <div class="row g-0">
-           
+
             <div class="col-md-8 ">
                 <div class="card-body p-5">
-                    <h5 class="card-title">HbA1c; GLYCOSYLATED HEMOGLOBIN</h5>
+                    <h5 class="card-title">{{data.name}}</h5>
                     <p class="card-text">
-                        HbA1c also called Glycated hemoglobin gives the average sugar level in the body over a period of
-                        2 to 3 months unlike blood sugar which indicates daily level. This test is used to diagnose
-                        prediabetes, diagnose type 1 and type 2 diabetes & monitor your diabetes treatment plan. Initial
-                        A1C test also helps to establish your baseline level. How often you need this test depends on
-                        the type of diabetes, your treatment plan, how well you are meeting treatment goals and your
-                        doctor's clinical judgment. The recommended protocol for this test is: Once every year if you
-                        have prediabetes; Twice a year if you do not use insulin and your blood sugar level is
-                        consistently within your target range; Four times a year if you take insulin or have trouble
-                        keeping your blood sugar level within your target range.
-
-
+                        {{data.description}}
                     </p>
-                    <h5 class="card-text"><small class="text-muted">₹ 440 </small></h5>
+                    <h5 class="card-text"><small class="text-muted">{{data.price}}</small></h5>
 
                 </div>
             </div>
             <div class="col-md-4">
-                <img src="assets/Packages/hba1c.jpeg" class="img-fluid " alt="...">
+                <img [src]="data.imageUrl" class="img-fluid " alt="...">
             </div>
         </div>
     </div>
-    <div class="card mb-5" style="max-width: 100%;">
+    <!--  <div class="card mb-5" style="max-width: 100%;">
         <div class="row g-0">
             <div class="col-md-4">
                 <img src="assets/Packages/urine.jpg" class="img-fluid " alt="...">
@@ -87,8 +64,7 @@
             <div class="col-md-8 ">
                 <div class="card-body p-5">
                     <h5 class="card-title">URINE EXAMINATION, ROUTINE; URINE, R/E</h5>
-                    <p class="card-text">Urine analyses is a very useful test because it can often detect medical
-                        problems before additional symptoms arise. This test is most often performed to monitor overall
+                    <p class="card-text">Urine analyses is a very useful test because it can often detect medical problems before additional symptoms arise. This test is most often performed to monitor overall
                         health, to diagnose a medical problem or to monitor a medical condition like urinary tract
                         infection, kidney stones, diabetes, liver & kidney problems. This test is routinely performed
                         prior to any surgery. Your doctor may order a urinalysis if you experience symptoms such as
@@ -103,7 +79,7 @@
     </div>
     <div class="card mb-5" style="max-width: 100%;">
         <div class="row g-0">
-          
+
             <div class="col-md-8 ">
                 <div class="card-body p-5">
                     <h5 class="card-title">THYROID PROFILE, TOTAL</h5>
@@ -154,7 +130,7 @@
     </div>
     <div class="card mb-5" style="max-width: 100%;">
         <div class="row g-0">
-           
+
             <div class="col-md-8 ">
                 <div class="card-body p-5">
                     <h5 class="card-title">LIVER & KIDNEY PANEL</h5>
@@ -205,7 +181,7 @@
     </div>
     <div class="card mb-5" style="max-width: 100%;">
         <div class="row g-0">
-          
+
             <div class="col-md-8 ">
                 <div class="card-body p-5">
                     <h5 class="card-title">CULTURE, URINE</h5>
@@ -251,7 +227,7 @@
     </div>
     <div class="card mb-5" style="max-width: 100%;">
         <div class="row g-0">
-        
+
             <div class="col-md-8 ">
                 <div class="card-body p-5">
                     <h5 class="card-title">WIDAL SLIDE AGGLUTINATION TEST</h5>
@@ -269,6 +245,6 @@
                 <img src="assets/Packages/WIDAL SLIDE AGGLUTINATION TEST.webp" class="img-fluid " alt="...">
             </div>
         </div>
-    </div>
+    </div> -->
 
 </div>

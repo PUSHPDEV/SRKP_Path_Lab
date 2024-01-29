@@ -5,18 +5,12 @@
 
 body {
     background: #fff !important;
-
+    font-family: 'Poppins', sans-serif;
     /* background: #e3f2fd !important; */
 }
 
-body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-}
-
 body::-webkit-scrollbar {
-    width: 13px;
-
+    width: 15px;
     background-color: transparent;
 }
 

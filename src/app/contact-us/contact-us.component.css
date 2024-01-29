@@ -1,22 +1,24 @@
-
-.address{
+.address {
     color: #000000;
     padding: 15px;
 }
-span{
+.error {
+    border: 2px solid red;
+}
+span {
     font-weight: bold;
     display: block;
     color: rgb(255, 0, 230);
 }
-.form-control:hover{
+
+.form-control:hover {
     border: 2px solid rgb(255, 0, 230);
 
 }
- i{
-    /* font-size: 30px; */
+
+i {
     border-radius: 50%;
     border: 1px solid #000000;
-    /* background-color: #0fe; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,19 +28,17 @@ span{
     color: #000000;
     margin: 0 auto;
     margin-bottom: 20px;
-    /* border: 2px solid red; */
 }
-i:hover{
+
+i:hover {
     transform: scale(1.1);
     box-shadow: 0px 0px 8px #0fe;
     border: 1px solid #0fe;
     background: #0fe;
     transition: all 0.5s ease;
 }
+
 a {
     color: #000000;
     text-decoration: none;
 }
-/* input{
-    background-color: gray;
-} */
