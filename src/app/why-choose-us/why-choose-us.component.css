@@ -39,11 +39,10 @@
 }
 
 .item .icon {
-    font-size: 40px;
-    margin-bottom: 25px;
+    background-color: #fff;
+
     color: #f91942;
-    width: 90px;
-    height: 90px;
+
     line-height: 76px;
     border-radius: 50px;
 

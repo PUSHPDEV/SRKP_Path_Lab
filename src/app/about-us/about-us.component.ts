@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
 })
 export class AboutUsComponent {
 
-    ourTeam=[
+    ourTeam: any[] = [
         {
             doctorImage: 'assets/Our_Team/Dr. SRKP.jpg',
             doctorName: 'Dr. Surendra Kumar',

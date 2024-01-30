@@ -1,106 +1,21 @@
-<!-- <p class="h1 m-3 ms-5 text-center"><u> Our Services</u></p>  -->
 <p class="h1 m-3 ms-5 text-center"> {{ourServices.our}} <span
         style="color: rgb(255, 0, 230);">{{ourServices.ser}}</span></p>
-<p class="m-1 p-3">Metropolis is a global leader in Blood Tests, Diagnostics and Wellness services. With operations
-    across India, Africa,
-    South Asia, and Middle East, we are trusted millions of Customers for their Inner Health Management.
-
-</p>
+<p class="m-1 p-3">{{aboutService}}</p>
 
 
 <div class="container mt-3 p-5">
     <div class="row row-cols-1 row-cols-md-3 g-4">
 
-        <div class="col">
+        <div class="col" *ngFor="let ourservices of services">
             <div class="card h-100">
-                <img [src]="pharmacy.url" class="card-img-top" alt="...">
-                <h5 class="card-title text-center m-4">{{pharmacy.name}}</h5>
+                <img [src]="ourservices.url" class="card-img-top" alt="...">
+                <h5 class="card-title text-center m-4">{{ourservices.name}}</h5>
                 <div class="card-body">
-                    <p class="card-text text-center m-4">{{pharmacy.description}}</p>
+                    <p class="card-text text-center m-4">{{ourservices.description}}</p>
                 </div>
             </div>
         </div>
 
-        <div class="col">
-            <div class="card h-100">
-                <img [src]="bloodCollection.url" class="card-img-top" alt="...">
-                <h5 class="card-title text-center m-4">{{bloodCollection.name}}</h5>
-                <div class="card-body">
-                    <p class="card-text  text-center m-4">{{bloodCollection.description}}</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card h-100">
-                <img [src]="onlineReporting.url" class="card-img-top" alt="...">
-                <h5 class="card-title text-center m-4">{{onlineReporting.name}}</h5>
-                <div class="card-body">
-                    <p class="card-text  text-center m-4">{{onlineReporting.description}}</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card h-100">
-                <img [src]="doctorSuggestion.url" class="card-img-top" alt="...">
-                <h5 class="card-title text-center m-4">{{doctorSuggestion.name}}</h5>
-                <div class="card-body">
-                    <p class="card-text  text-center m-4">{{doctorSuggestion.description}}
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card h-100">
-                <img [src]="xRayCenter.url" class="card-img-top" alt="...">
-                <h5 class="card-title text-center m-4">{{xRayCenter.name}}</h5>
-                <div class="card-body">
-                    <p class="card-text  text-center m-4">{{xRayCenter.description}}</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card h-100">
-                <img [src]="opdFacility.url" class="card-img-top" alt="...">
-                <h5 class="card-title text-center m-4">{{opdFacility.name}}</h5>
-                <div class="card-body">
-                    <p class="card-text  text-center m-4">{{opdFacility.description}}</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card h-100">
-                <img [src]="wellness.url" class="card-img-top" alt="...">
-                <h5 class="card-title text-center m-4">{{wellness.name}}</h5>
-                <div class="card-body">
-                    <p class="card-text  text-center m-4"> {{wellness.description}}</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card h-100">
-                <img [src]="nutritionDietition.url" class="card-img-top" alt="...">
-                <h5 class="card-title text-center m-4">{{nutritionDietition.name}}</h5>
-                <div class="card-body">
-                    <p class="card-text  text-center m-4">{{nutritionDietition.description}}</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card h-100">
-                <img [src]="medicalStore.url" class="card-img-top" alt="...">
-                <h5 class="card-title text-center m-4">{{medicalStore.name}}</h5>
-                <div class="card-body">
-                    <p class="card-text text-center m-4">{{medicalStore.description}}</p>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 

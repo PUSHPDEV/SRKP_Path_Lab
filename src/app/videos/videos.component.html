@@ -121,3 +121,87 @@
 
 
 
+<div class="container-fluid package mt-5">
+
+  <h1 class="h1 ms-4">Our Best <span style="color: rgb(255, 0, 230);">Packages</span></h1>
+  <p class="m-3">Choose from our wide range of TruHealth Package and Health Checkups</p>
+  <!-- <div class="bton">
+  <button routerLink="/package" class="btn btn-info p-2 m-1" >View More</button>
+
+</div> -->
+  <div id="carouselExampleControls" class="carousel slide p-4 mt-4 " data-bs-ride="carousel">
+    <div class="carousel-inner mb-4">
+      <div class="carousel-item active">
+
+        <div class="container-xxl mt-3">
+
+          <div class="row">
+            <div class="col" *ngFor="let item of activePackage">
+              <div class="card ms-3">
+                <img [src]="item.packageImage" class="card-img-top" alt="..." height="300">
+                <div class="card-body">
+                  <h5 class="card-title">{{item.packageName}}</h5>
+                  <h5 class="card-title">{{item.packagePrice}}</h5>
+                  <p class="card-text">{{item.packageDescription}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="carousel-item">
+        <div class="container-xxl mt-3">
+
+          <div class="row">
+            <div class="col" *ngFor="let item2 of package">
+              <div class="card ms-3">
+                <img [src]="item2.packageImage" class="card-img-top" alt="..." height="300">
+                <div class="card-body">
+                  <h5 class="card-title">{{item2.packageName}}</h5>
+                  <h5 class="card-title">{{item2.packagePrice}}</h5>
+                  <p class="card-text">{{item2.packageDescription}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="container-xxl mt-3">
+
+          <div class="row">
+            <div class="col" *ngFor="let item3 of secondPackage">
+              <div class="card ms-3">
+                <img [src]="item3.packageImage" class="card-img-top" alt="..." height="300">
+                <div class="card-body">
+                  <h5 class="card-title">{{item3.packageName}}</h5>
+                  <h5 class="card-title">{{item3.packagePrice}}</h5>
+                  <p class="card-text">{{item3.packageDescription}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev text-dark " type="button" data-bs-target="#carouselExampleControls"
+      data-bs-slide="prev" style="margin-right: 100px; border: 2px solid red; width: 50px;">
+      <span class="carousel-control-prev-icon bg-info" aria-hidden="true" style="border-radius: 50%; "></span>
+      <span class="visually-hidden ">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" style="margin-left: 100px; border: 2px solid red; width: 50px;">
+      <span class="carousel-control-next-icon bg-info" aria-hidden="true" style="border-radius: 50%;"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+</div>

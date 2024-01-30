@@ -61,7 +61,8 @@
 
                     <div class=" mb-3">
                         <input type="text" class="form-control" id="name" placeholder="Enter your Name"
-                            formControlName="name"[ngClass]="{error:getControl('name')?.errors && getControl('name')?.touched}">
+                            formControlName="name"
+                            [ngClass]="{error:getControl('name')?.errors && getControl('name')?.touched}">
 
                         <div *ngIf="getControl('name')?.errors && getControl('name')?.touched">
 
@@ -80,7 +81,8 @@
 
                         <div class="col mb-3">
                             <input type="email" class="form-control " id="floatingInput" placeholder="Enter Your Email"
-                                formControlName="email" [ngClass]="{error:getControl('email')?.errors && getControl('email')?.touched}">
+                                formControlName="email"
+                                [ngClass]="{error:getControl('email')?.errors && getControl('email')?.touched}">
 
                             <div *ngIf="getControl('email')?.errors && getControl('email')?.touched">
 
@@ -97,7 +99,8 @@
                         <div class="col">
 
                             <input type="number" class="form-control" id="floatingNumber" placeholder="Mobile Number"
-                                formControlName="mobile" [ngClass]="{error:getControl('mobile')?.errors && getControl('mobile')?.touched}" >
+                                formControlName="mobile"
+                                [ngClass]="{error:getControl('mobile')?.errors && getControl('mobile')?.touched}">
 
                             <div *ngIf="getControl('mobile')?.errors && getControl('mobile')?.touched">
 
@@ -117,7 +120,8 @@
                     <div class="mt-3">
 
                         <textarea class="form-control " placeholder="Leave a comment here" id="floatingTextarea2"
-                            style="height: 100px" formControlName="message" [ngClass]="{error:getControl('message')?.errors && getControl('message')?.touched}"></textarea>
+                            style="height: 100px" formControlName="message"
+                            [ngClass]="{error:getControl('message')?.errors && getControl('message')?.touched}"></textarea>
 
                         <div *ngIf="getControl('message')?.errors && getControl('message')?.touched">
 
@@ -132,7 +136,8 @@
 
                     <div class="text-center ">
 
-                        <button type="button" class="btn btn-outline-success mt-3" [disabled]="submitForm.status==='INVALID' ">
+                        <button type="button" class="btn btn-outline-success mt-3"
+                            [disabled]="submitForm.status==='INVALID' ">
                             Submit
                         </button>
                     </div>

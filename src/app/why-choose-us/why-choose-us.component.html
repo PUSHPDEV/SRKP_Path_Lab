@@ -4,61 +4,22 @@
         <div class="container">
             <div class="row">
                 <div class="section-head col-sm-12">
-                    <h1>Why<span style="color: rgb(255, 0, 230);"> Choose</span> Us?</h1>
+                    <h1>{{mainHeading}}</h1>
+                    <!-- <h1>Why<span style="color: rgb(255, 0, 230);"> Choose</span> Us?</h1> -->
                     <p>When you choose us, you'll feel the benefit of 10 years' experience of Pathology Lab. Because
                         we know the digital world and we know that how to handle it. With working knowledge of online,
                         SEO and social media.</p>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+
+                <div class="col-lg-4 col-sm-6" *ngFor="let data of chooseUs">
                     <div class="item">
-                        <span class="icon feature_box_col_one"><img src="assets/Choose-us/Lab.svg" alt=""></span>
-                        <h6>Advanced Labs</h6>
-                        <p>We use latest technology for the latest world because we know the demand of peoples.</p>
+                        <span class="icon feature_box_col_one"><img [src]="data.imgUrl" alt=""
+                                style="width: 70px; height: 70px; border-radius: 50%;"></span>
+                        <h6>{{data.heading}}</h6>
+                        <p>{{data.description}}</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="item"> <span class="icon feature_box_col_two"><img
-                                src="assets/Choose-us/trusted-doctors.svg" alt=""></span>
-                        <h6>Trusted by Leading Doctors </h6>
-                        <p>We are always creative and and always lisen our costomers and we mix these two things and
-                            make beast design.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="item"> <span class="icon feature_box_col_three">
-                            <img src="assets/Choose-us/24 x 7.svg" alt="" height="60" width="60"
-                                style="border-radius: 50%;">
-                        </span>
-                        <h6>24 x 7 User Support</h6>
-                        <p>If our customer has any problem and any query we are always happy to help then.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="item">
-                        <span class="icon feature_box_col_four">
-                            <img src="assets/Choose-us/accurate-reports.svg" alt=""></span>
-                        <h6>Accurate Reports</h6>
-                        <p>Everyone wants to live on top of the mountain, but all the happiness and growth occurs while
-                            you're climbing it</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="item">
-                        <span class="icon feature_box_col_five"><img src="assets/Choose-us/patient-service-centres.svg"
-                                alt="" height="60" width="60" style="border-radius: 50%;"></span>
-                        <h6>Patient Service Centres</h6>
-                        <p>Holding back technology to preserve broken business models is like allowing blacksmiths to
-                            veto the internal combustion engine in order to protect their horseshoes.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="item"> <span class="icon feature_box_col_six"><img
-                                src="assets/Choose-us/affordable-cost.svg" alt="" height="60" width="60"></span>
-                        <h6>Affordable cost</h6>
-                        <p>Love is a special word, and I use it only when I mean it. You say the word too much and it
-                            becomes cheap.</p>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>

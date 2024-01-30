@@ -1,4 +1,4 @@
-.container {
+/* .container {
   max-width: 950px;
   width: 100%;
   overflow: hidden;
@@ -149,7 +149,50 @@ input[type="radio"] {
 
 @media (max-width: 600px) {
   .main-card .cards .card {
-    /* margin: 20px 0 10px 0; */
     width: 100%;
   }
+} */
+
+
+
+
+
+.container {
+  font-family: poppins;
+
+}
+
+div {
+  font-family: poppins;
+}
+
+.carousel {
+  margin: 10px;
+}
+
+.carousel-item {
+  width: 100%;
+}
+
+.card {
+
+  height: 380px;
+  width: calc(100%4);
+  margin-right: 10px;
+  transition: all 0.4s ease;
+
+}
+
+.card i {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  color: #ff00f7;
+  font-size: 40px;
+  margin-left: 0;
+}
+
+.card:hover {
+  /* box-shadow: 1px 10px 8px 2px #00000030, 1px 10px 8px 2px #00000030, 1px 10px 8px 2px #00000030, 1px 10px 8px 2px #00000030, 0 0px 8px 0px #00000030, 0 0px 8px 0px #00000030; */
+  transform: translateY(-15px);
 }
