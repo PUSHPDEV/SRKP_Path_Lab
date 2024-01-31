@@ -17,4 +17,8 @@ import { HomeComponent } from "./home/home.component";
 })
 export class AppComponent {
   title = 'SRKP_Path_Lab';
+
+  onScroll(){
+    window.scroll(0,0)
+  }
 }

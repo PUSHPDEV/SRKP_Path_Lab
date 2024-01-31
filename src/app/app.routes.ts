@@ -9,6 +9,8 @@ import { VideosComponent } from './videos/videos.component';
 import { PackagesComponent } from './packages/packages.component';
 import { LoginComponent } from './login/login.component';
 import { CustomersSayComponent } from './customers-say/customers-say.component';
+import { ViewTestDetailsComponent } from './view-test-details/view-test-details.component';
+import { AddPackageComponent } from './add-package/add-package.component';
 
 export const routes: Routes = [
     { 'path': 'home', 'title': 'Home', component: HomeComponent },
@@ -21,6 +23,8 @@ export const routes: Routes = [
     { 'path': 'video', 'title': 'Videos', component: VideosComponent },
     { 'path': 'login', 'title': 'Login', component: LoginComponent },
     { 'path': 'customers-say', 'title': 'Customers Say', component: CustomersSayComponent },
+    { 'path': 'view-details/:id', 'title': 'Test Details', component: ViewTestDetailsComponent },
+    { 'path': 'add-package', 'title': 'Add Package', component: AddPackageComponent },
     { 'path': '**', 'title': 'Page Not Found', component: PageNotFoundComponent }
 
 ];

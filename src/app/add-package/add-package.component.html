@@ -1,0 +1,23 @@
+<div class="container-xxl mt-5">
+    <div class="add-package">
+        <form  #addPackage="ngForm" (ngSubmit)="submit(addPackage.value)">
+       
+                <div class="mb-3">
+                  <input type="text" name="packageName" ngModel class="form-control" id="exampleInputEmail1" placeholder="Enter Test Name" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <input type="text" name="price" ngModel class="form-control" id="exampleInputEmail1" placeholder="Enter Test Price" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <textarea type="text" name="description" ngModel class="form-control" id="exampleInputEmail1" placeholder="Enter Test Description" aria-describedby="emailHelp"></textarea>
+                </div>
+                <div class="mb-3">
+                  <!-- <label for="formFileMultiple" class="form-label"></label> -->
+                  <input class="form-control" type="file" id="formFileMultiple" placeholder="Multiple files input example" multiple>
+                </div>
+              
+                <button type="submit" class="btn btn-primary">Add Package</button>
+         
+        </form>
+    </div>
+</div>
